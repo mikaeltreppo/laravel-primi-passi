@@ -17,11 +17,24 @@ Route::get('/', function () {
 
 
 
-$saluto= 'hello World!';
+    $saluto = 'hello World!';
+    $liguria = 'ligure';
+    $sardegna = 'sardo';
+    $lombardia = 'lombardo';
+    $puglia = 'pugliese';
 
-$data =[
-    'saluto'=>$saluto,
-];
-
+    $data = [
+        'saluto' => $saluto,
+        'regioni' => [
+            $liguria,
+            $lombardia,
+            $puglia,
+            $sardegna
+    
+    
+    
+        ]
+    ];
+ 
     return view('Home', $data);
 });

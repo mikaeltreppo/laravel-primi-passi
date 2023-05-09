@@ -10,5 +10,11 @@
     </head>
     <body class="antialiased">
         {{$saluto}}
+        <h1>I Dialetti</h1>
+        <ul>
+            @foreach ($regioni as $dialetto)
+              <li>{{$dialetto}}</li>  
+            @endforeach
+        </ul>
     </body>
 </html>
